@@ -1,2 +1,25 @@
-<h4>Title:</h4><%= @book.title %>
-<h4>Body:</h4><%= @book.body %>
+<!DOCTYPE html>
+<html>
+  <body>
+    <table>
+      <tr>
+        <th>Title:</th>
+        <td><%= @book.title %></td>
+      </tr>
+
+      <tr>
+        <th>Body:</th>
+        <td><%= @book.body %></td>
+      </tr>
+    </table>
+
+
+    <p><%= link_to "Edit", edit_book_path(@book.id) %></p>
+  
+    <p><%= link_to "Back", '/books' %></p>
+  </body>
+</html>
+
+
+
+
