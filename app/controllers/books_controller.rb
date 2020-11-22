@@ -15,11 +15,20 @@ class BooksController < ApplicationController
   end
 
   def create
-
+    @book = Book.new(book_params)
+    if @bbok.save
+      redirect_to book_path(@book)
+    else
+      render :new
+    end
   end
 
   def edit
   end
 
+  private
+  def book_params
+    params.recuire(:book).permit(:title, :body)
+  end
 
 end
