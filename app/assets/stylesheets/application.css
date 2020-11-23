@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top{
+  padding:10px;
+}
+
+.top-style{
+  padding:10px 40px;
+}
+
+body{
+  padding:20px;
+  font-family:verdana, arial, helvetica;
+}
+
+.index{
+  max-width: 750px;
+}
+
+table td{
+  word-break : break-all;
+  max-width: 350px;
+}
+
+.index-td{
+  width: 50px;
+}
+
+.index-td-destroy{
+  width:60px;
+}
+
+.show{
+  padding:20px 40px;
+}
+
+.show-th,.show-td{
+  padding-bottom:20px;
+}
+
+.style{
+  display:inline-block;
+}

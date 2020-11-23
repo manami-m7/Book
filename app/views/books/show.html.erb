@@ -2,22 +2,22 @@
 <html>
   <body>
     <%= flash[:notice] %>
-    <table>
+    <table class="show">
       <tr>
-        <th>Title:</th>
-        <td><%= @book.title %></td>
+        <th class="show-th">Title:</th>
+        <td class="show-td"><%= @book.title %></td>
       </tr>
 
       <tr>
-        <th>Body:</th>
-        <td><%= @book.body %></td>
+        <th class="show-th">Body:</th>
+        <td class="show-td"><%= @book.body %></td>
       </tr>
     </table>
 
 
-    <p><%= link_to "Edit", edit_book_path(@book.id) %></p>
-
-    <p><%= link_to "Back", '/books' %></p>
+    <div class="style"><%= link_to "Edit", edit_book_path(@book.id) %></div>
+    <div class="style">|</div>
+    <div class="style"><%= link_to "Back", '/books' %></div>
   </body>
 </html>
 
