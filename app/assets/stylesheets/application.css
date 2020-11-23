@@ -35,6 +35,7 @@ body{
 
 .index{
   max-width: 750px;
+  padding-top:20px;
 }
 
 table td{
@@ -42,14 +43,27 @@ table td{
   max-width: 350px;
 }
 
+.index-td-body{
+  padding-left:20px;
+  padding-right:20px;
+}
+
 .index-td{
   width: 50px;
 }
 
 .index-td-destroy{
-  width:60px;
+  width:70px;
 }
 
+.new-book{
+  padding-top:40px;
+  padding-bottom:20px;
+}
+
+.text{
+  padding:10px;
+}
 .show{
   padding:20px 40px;
 }
@@ -60,4 +74,13 @@ table td{
 
 .style{
   display:inline-block;
+  padding-top:10px;
+}
+
+.edit{
+  padding-bottom:20px;
+}
+
+.flash{
+  color:green;
 }
