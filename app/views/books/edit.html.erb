@@ -2,17 +2,15 @@
 <html>
   <body>
     <h1>Editing Book</h1>
-    <% if @book.errors.any? %>
-      <div id="error_explanation" class="alert alert-danger">
-        <ul>
-          <% @book.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    <%= form_for(@book) do |f| %>
+    <%= form_for @book do |f| %>
+        <% if @book.errors.any? %>
+          <h3><%= @book.errors.count %>error prohibited this book from being saved:</h3>
+          <ul>
+            <% @book.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        <% end %>
 
       <p>Title</p>
       <%= f.text_field :title %>

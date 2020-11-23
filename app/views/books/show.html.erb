@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <%= flash[:notice] %>
     <table>
       <tr>
         <th>Title:</th>
@@ -15,7 +16,7 @@
 
 
     <p><%= link_to "Edit", edit_book_path(@book.id) %></p>
-  
+
     <p><%= link_to "Back", '/books' %></p>
   </body>
 </html>
